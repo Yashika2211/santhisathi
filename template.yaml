@@ -5,7 +5,7 @@ Description: SaansSaathi - school-day air plans with principal approval and Hind
 Parameters:
   BedrockModelId:
     Type: String
-    Default: anthropic.claude-sonnet-5-5
+    Default: us.anthropic.claude-sonnet-4-6
     Description: Bedrock model or inference profile id used by the Strands agent.
   TelegramTokenParam:
     Type: String

@@ -24,7 +24,7 @@ fi
 
 sam build
 sam deploy --region "$REGION" --parameter-overrides \
-  "BedrockModelId=${MODEL:-anthropic.claude-sonnet-5-5}" "TelegramTokenParam=$PARAM" "PrincipalPin=$PIN"
+  "BedrockModelId=${MODEL:-us.anthropic.claude-sonnet-4-6}" "TelegramTokenParam=$PARAM" "PrincipalPin=$PIN"
 
 out() { aws cloudformation describe-stacks --region "$REGION" --stack-name "$STACK" \
   --query "Stacks[0].Outputs[?OutputKey=='$1'].OutputValue" --output text; }

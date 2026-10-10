@@ -21,7 +21,7 @@ from .schools import get_school
 
 log = logging.getLogger(__name__)
 
-DEFAULT_MODEL_ID = "anthropic.claude-sonnet-5-5"
+DEFAULT_MODEL_ID = "us.anthropic.claude-sonnet-4-6"
 
 SYSTEM_PROMPT = """You write the morning air-quality messages for SaansSaathi, a service for schools in Delhi.
 
